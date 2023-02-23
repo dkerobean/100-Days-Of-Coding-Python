@@ -1,11 +1,12 @@
 import requests
 from twilio.rest import Client
+from decouple import config
 
 
 api_endpoint = "https://api.openweathermap.org/data/3.0/onecall"
-api_key = "d07cad9c0014bbd26061b989bb5d774f"
+api_key = config('api_key')
 account_sid = "AC63107ae8b6fce633501cbae60e450785"
-auth_token = "001c0875f0116ccc348ade6196298a9e"
+auth_token = config('auth_token')
 
 MY_LAT = 5.603717
 MY_LOG = -0.186964
