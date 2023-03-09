@@ -31,7 +31,6 @@ song_titles = soup.find_all(name="h3", id="title-of-a-story")
 song_names = [songs.getText() for songs in song_titles]
 print(song_names)
 
-
 song_uris = []
 year = user_date.split("-")[0]
 
