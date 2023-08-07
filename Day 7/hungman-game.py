@@ -29,6 +29,7 @@ while not end_of_game:
             print("You loose")
 
     print(display)
+    #print(chosen_word)
 
     if "_" not in display:
         end_of_game = True

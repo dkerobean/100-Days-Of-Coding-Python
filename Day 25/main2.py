@@ -13,13 +13,15 @@ import pandas
 
 data = pandas.read_csv("weather-data.csv")
 
-# convert to dictionart
+print(f"data {data}")
+
+# convert to dictionary
 data_dict = data.to_dict()
 print(data_dict)
 
 # convert to list
 temp_list = data["temp"].to_list()
-print(temp_list)
+print(f"temp_list {temp_list}")
 
 # average temp
 avg_temp = sum(temp_list) / len(temp_list)
@@ -38,7 +40,9 @@ print(data[data["day"] == "Monday"])
 
 print(data[data["temp"] == data["temp"].max()])
 
-monday = data[data["day"] == "Monday"]
+monday = data[
+    data["day"] == "Monday"
+]
 print(monday.condition)
 
 #convert monday temp to farenheight

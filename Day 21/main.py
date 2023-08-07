@@ -4,10 +4,8 @@ class Animal:
     def __init__(self):
         self.eyes = 2
 
-
     def breathe(self):
         print("inhale and exhale")
-
 
     def eat(self):
         print("put food in stomach")

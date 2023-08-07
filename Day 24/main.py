@@ -4,6 +4,7 @@ PLACEHOLDER = "[name]"
 with open("./Input/Names/invited_names.txt") as names_file:
     names = names_file.readlines()
 
+
 with open("./Input/Letters/starting_letter.txt") as letter_file:
     letter_content = letter_file.read()
 
@@ -12,3 +13,4 @@ with open("./Input/Letters/starting_letter.txt") as letter_file:
         letter_content.replace(PLACEHOLDER, stripped_name)
         with open(f"./Output/ReadyToSend/letter_for_{stripped_name}.txt", "w") as letter:
             letter.write(letter_content)
+

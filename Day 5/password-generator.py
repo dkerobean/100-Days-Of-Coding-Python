@@ -24,6 +24,8 @@ for i in range(0, nr_symbols):
 
 random.shuffle(password)
 
+print(password)
+
 new_password = ""
 
 for i in password:
